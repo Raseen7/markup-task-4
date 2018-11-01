@@ -1,0 +1,139 @@
+.card 
+{
+    width: 400px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, .1), 0 1px
+        rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, .1), 0 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 2px -3px rgba(0, 0, 0, .1), 0 1px rgba(0, 0, 0, .1);
+    display: inline-block;
+    margin: 10px 5px auto;
+    background-color: white;
+    overflow: hidden;
+    text-align: left;
+}
+
+.full_info 
+{
+    display: none;
+}
+
+input,
+input[value='off']:checked ~ label[for='toggle-off'],
+input[value='on']:checked ~ label[for='toggle-on']
+{
+    display: none;
+}
+
+input[value='on']:checked ~ main .card
+{
+    display: block;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[value='on']:checked ~ body 
+{
+    padding: 20px;
+}
+
+input[value='on']:checked ~ main .card div img 
+{
+    height: 400px;
+}
+
+input[value='on']:checked ~ main div:nth-child(n):not(:last-child):not(
+:first-child):not(:nth-child(2))
+{
+    display: none;
+}
+
+input[value='on']:checked ~ main .card_name 
+{
+    margin: 10px;
+}
+
+input[value='on']:checked ~ main .full_info 
+{
+    display: flex;
+    margin: 10px;
+    color: gray;
+ 
+}
+
+.card_status 
+{
+    margin-left: 30px;
+    margin-top: 40px;
+    color: gray;
+    font-size: 17px;
+}
+
+.card_age,
+.card_breed,
+.card_diseases 
+{
+    margin-left: 30px;
+    color: grey;
+    font-size: 17px;
+}
+
+.card_name 
+{
+    font-size: 30px;
+    margin: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body 
+{
+    background-color: #eef0f4;
+}
+
+main 
+{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 48px;
+    text-align: center;
+}
+
+.card:hover 
+{
+    -webkit-box-shadow: 0 1px 3px 1px rgba(60, 64, 67, .2)
+        , 0 2px 8px 4px rgba(60, 64, 67, .1);
+    -moz-box-shadow: 0 1px 3px 1px rgba(60, 64, 67, .2)
+        , 0 2px 8px 4px rgba(60, 64, 67, .1);
+    box-shadow: 0 1px 3px 1px rgba(60, 64, 67, .2)
+        , 0 2px 8px 4px rgba(60, 64, 67, .1);
+}
+
+label img:hover 
+{
+    cursor: pointer;
+}
+
+.card_name:hover 
+{
+    color: gray;
+    cursor: pointer;
+}
+
+.card div img:hover 
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.card div img 
+{
+    width: 100%;
+    height: 270px;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+}
