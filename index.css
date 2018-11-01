@@ -44,8 +44,10 @@ input[value='on']:checked ~ main .card div img
     height: 400px;
 }
 
-input[value='on']:checked ~ main div:nth-child(n):not(:last-child):not(
-:first-child):not(:nth-child(2))
+input[value='on']:checked ~ main .card .card_age,
+.card_breed,
+.card_status,
+.card_diseases
 {
     display: none;
 }
