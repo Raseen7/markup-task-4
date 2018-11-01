@@ -45,9 +45,9 @@ input[value='on']:checked ~ main .card div img
 }
 
 input[value='on']:checked ~ main .card .card_age,
-.card_breed,
-.card_status,
-.card_diseases
+input[value='on']:checked ~ main .card .card_breed,
+input[value='on']:checked ~ main .card .card_status,
+input[value='on']:checked ~ main .card .card_diseases
 {
     display: none;
 }
