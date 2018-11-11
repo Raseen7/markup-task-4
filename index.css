@@ -12,6 +12,7 @@
     background-color: white;
     overflow: hidden;
     text-align: left;
+    vertical-align: top;
 }
 
 .full_info 
@@ -26,7 +27,7 @@ input[value='on']:checked ~ label[for='toggle-on']
     display: none;
 }
 
-input[value='on']:checked ~ main .card
+input[value='on']:checked ~ article .card
 {
     display: block;
     width: 700px;
@@ -39,25 +40,25 @@ input[value='on']:checked ~ body
     padding: 20px;
 }
 
-input[value='on']:checked ~ main .card div img 
+input[value='on']:checked ~ article .card div img 
 {
     height: 400px;
 }
 
-input[value='on']:checked ~ main .card .card_age,
-input[value='on']:checked ~ main .card .card_breed,
-input[value='on']:checked ~ main .card .card_status,
-input[value='on']:checked ~ main .card .card_diseases
+input[value='on']:checked ~ article .card .card_age,
+input[value='on']:checked ~ article .card .card_breed,
+input[value='on']:checked ~ article .card .card_status,
+input[value='on']:checked ~ article .card .card_diseases
 {
     display: none;
 }
 
-input[value='on']:checked ~ main .card_name 
+input[value='on']:checked ~ article .card_name 
 {
     margin: 10px;
 }
 
-input[value='on']:checked ~ main .full_info 
+input[value='on']:checked ~ article .full_info 
 {
     display: flex;
     margin: 10px;
@@ -90,12 +91,17 @@ input[value='on']:checked ~ main .full_info
     text-overflow: ellipsis;
 }
 
+h1 
+{
+    font-size: 30px;
+}
+
 body 
 {
     background-color: #eef0f4;
 }
 
-main 
+article 
 {
     padding-left: 0;
     padding-right: 0;
